@@ -40,4 +40,18 @@ tennis = pd.read_csv("tennis_stats.csv")
 
 #there are no null values, so we can continue
 
+'''
+We now want to do a calculation which lists the stats of a player over a period  
+of years and groups them such that each player has a ranking and we can see all
+the players with their rankings
+'''
+
+
+#print(tennis['Player'].nunique())
+#438 unique tennis players
+
+grouped_tennis = tennis.groupby('Player')
+print(grouped_tennis)
+
+
 
